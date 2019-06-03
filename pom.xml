@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>ru.kravchenko.deltaspike</groupId>
+  <artifactId>deltaspike</artifactId>
+  <version>1.0.0</version>
+
+  <name>deltaspike</name>
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.webcohesion.enunciate</groupId>
+      <artifactId>enunciate-core</artifactId>
+      <version>2.11.1</version>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.47</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.4.0.Final</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.glassfish.jaxb</groupId>
+          <artifactId>jaxb-runtime</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-c3p0</artifactId>
+      <version>5.4.0.Final</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.199</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.deltaspike.modules</groupId>
+      <artifactId>deltaspike-data-module-impl</artifactId>
+      <version>RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.deltaspike.modules</groupId>
+      <artifactId>deltaspike-test-control-module-impl</artifactId>
+      <version>RELEASE</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.deltaspike.cdictrl</groupId>
+      <artifactId>deltaspike-cdictrl-weld</artifactId>
+      <version>RELEASE</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.weld.se</groupId>
+      <artifactId>weld-se-core</artifactId>
+      <version>3.1.0.Final</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.6</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.jcabi</groupId>
+      <artifactId>jcabi-manifests</artifactId>
+      <version>1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains</groupId>
+      <artifactId>annotations</artifactId>
+      <version>13.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.thedeanda</groupId>
+      <artifactId>lorem</artifactId>
+      <version>2.1</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+
+  </build>
+</project>
+
+
+        <!--&lt;!&ndash;TESTING&ndash;&gt;-->
+<!--<dependency>-->
+<!--<groupId>junit</groupId>-->
+<!--<artifactId>junit</artifactId>-->
+<!--<version>4.11</version>-->
+<!--<scope>test</scope>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.apache.deltaspike.modules</groupId>-->
+<!--<artifactId>deltaspike-test-control-module-impl</artifactId>-->
+<!--<version>RELEASE</version>-->
+<!--<scope>test</scope>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.apache.deltaspike.cdictrl</groupId>-->
+<!--<artifactId>deltaspike-cdictrl-weld</artifactId>-->
+<!--<version>RELEASE</version>-->
+<!--<scope>test</scope>-->
+<!--</dependency>-->
+        <!--&lt;!&ndash;LOMBOK&ndash;&gt;-->
+<!--<dependency>-->
+<!--<groupId>org.projectlombok</groupId>-->
+<!--<artifactId>lombok</artifactId>-->
+<!--<version>1.18.6</version>-->
+<!--<scope>provided</scope>-->
+<!--</dependency>-->
+        <!--&lt;!&ndash;CDI&ndash;&gt;-->
+<!--<dependency>-->
+<!--<groupId>org.jboss.weld.se</groupId>-->
+<!--<artifactId>weld-se-core</artifactId>-->
+<!--<version>3.1.0.Final</version>-->
+<!--<scope>compile</scope>-->
+<!--</dependency>-->
+        <!--&lt;!&ndash;JDBC&ndash;&gt;-->
+<!--<dependency>-->
+<!--<groupId>mysql</groupId>-->
+<!--<artifactId>mysql-connector-java</artifactId>-->
+<!--<version>5.1.6</version>-->
+<!--</dependency>-->
+        <!--&lt;!&ndash;HIBERNATE&ndash;&gt;-->
+<!--<dependency>-->
+<!--<groupId>org.hibernate</groupId>-->
+<!--<artifactId>hibernate-core</artifactId>-->
+<!--<version>5.3.9.Final</version>-->
+<!--<scope>compile</scope>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.hibernate</groupId>-->
+<!--<artifactId>hibernate-c3p0</artifactId>-->
+<!--<version>5.3.9.Final</version>-->
+<!--<scope>compile</scope>-->
+<!--</dependency>-->
+        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
+        <!--&lt;!&ndash;<groupId>org.hibernate</groupId>&ndash;&gt;-->
+        <!--&lt;!&ndash;<artifactId>hibernate-entitymanager</artifactId>&ndash;&gt;-->
+        <!--&lt;!&ndash;<version>RELEASE</version>&ndash;&gt;-->
+        <!--&lt;!&ndash;<scope>compile</scope>&ndash;&gt;-->
+        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;DELTA SPIKE&ndash;&gt;-->
+<!--<dependency>-->
+<!--<groupId>org.apache.deltaspike.core</groupId>-->
+<!--<artifactId>deltaspike-core-api</artifactId>-->
+<!--<scope>compile</scope>-->
+<!--<version>RELEASE</version>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.apache.deltaspike.core</groupId>-->
+<!--<artifactId>deltaspike-core-impl</artifactId>-->
+<!--<version>RELEASE</version>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.apache.deltaspike.cdictrl</groupId>-->
+<!--<artifactId>deltaspike-cdictrl-api</artifactId>-->
+<!--<version>RELEASE</version>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.apache.deltaspike.cdictrl</groupId>-->
+<!--<artifactId>deltaspike-cdictrl-weld</artifactId>-->
+<!--<version>RELEASE</version>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.apache.deltaspike.modules</groupId>-->
+<!--<artifactId>deltaspike-data-module-api</artifactId>-->
+<!--<version>RELEASE</version>-->
+<!--</dependency>-->
+<!--<dependency>-->
+<!--<groupId>org.apache.deltaspike.modules</groupId>-->
+<!--<artifactId>deltaspike-data-module-impl</artifactId>-->
+<!--<version>RELEASE</version>-->
+<!--<scope>compile</scope>-->
+<!--</dependency>-->
+
+        <!--&lt;!&ndash;LOREM&ndash;&gt;-->
+<!--<dependency>-->
+<!--<groupId>com.thedeanda</groupId>-->
+<!--<artifactId>lorem</artifactId>-->
+<!--<version>2.1</version>-->
+<!--</dependency>-->
